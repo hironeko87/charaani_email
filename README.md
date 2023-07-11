@@ -31,3 +31,6 @@ win3.py
 B2360のところ各自の用途に合わせて調整してください。
 
 If you have any questions, [@hironeko87](https://twitter.com/hironeko87)
+
+
+2023-07-12 Ver0.1
