@@ -2,6 +2,8 @@
 A Python script to quickly parse &amp; decode e-mails sent from Chara-ani.com for quick reference of total slots won for Not equal me offline &amp; online fan meets
 
 支払いの準備が整える前に、大量に申し込んだお話会の当選した内訳を秒速でわかります。
+[For instruction in English click here
+](https://github.com/hironeko87/charaani_email/blob/main/README_English.md)
 
 ![イメージ](https://github.com/hironeko87/charaani_email/blob/main/SCR-20230712-r3-2.png)
 
