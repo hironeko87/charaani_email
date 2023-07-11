@@ -9,7 +9,7 @@ With this script, you can subtotal number of talk events won before the payment 
 Preperation
 
 - eml files that indicate you have won a specific slot
-    - You can export eml files from individual emails from MacOS's pre-installed Mail app or any other 3rd party e-mail apps such as "Outlook" on Windows.
+    - You can export eml files from individual emails with MacOS's pre-installed Mail app or any other 3rd party e-mail apps such as "Outlook" on Windows.
     - Search using keyword "当選のお知らせ"
     - Select all that matched the search and drag &amp; drop into an empty folder.
 - Python environment
