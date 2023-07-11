@@ -4,13 +4,19 @@ A Python script to quickly parse &amp; decode e-mails sent from Chara-ani.com fo
 ## 使い方
 用意していただくもの
 
- - 当選されたemlファイルの入ったフォルダー（MacOSにて標準アプリ”メール”もしくはWindows/Linuxのサードパーティーアプリ”Outlook”などでも出力可能）
-   タイトルは「当選のお知らせ」で検索してください。
+ - 当選されたemlファイル
+    - MacOSにて標準アプリ”メール”もしくはWindows/Linuxのサードパーティーアプリ”Outlook”などでも出力可能
+    - タイトルは「当選のお知らせ」で検索してください.
+    - ヒットしたメールをすべて同じフォルダーに保管してください
  - Python環境
    - fast_mail_parser、　以下で事前にインストールしてください
      ```
      pip install fast-mail-parser
      ```
+
+```
+python win3.py [emlファイルのフォルダー/]　[csvファイルの出力先.csv]
+```
 
 ##　原理
 
