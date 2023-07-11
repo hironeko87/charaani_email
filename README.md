@@ -1,5 +1,5 @@
 # charaani_email
-A Python script to decode e-mails sent from Chara-ani.com for quick reference of total slots won for Not equal me offline &amp; online fan meets
+A Python script to quickly parse &amp; decode e-mails sent from Chara-ani.com for quick reference of total slots won for Not equal me offline &amp; online fan meets
 
 ## 使い方
 用意していただくもの
@@ -14,7 +14,7 @@ A Python script to decode e-mails sent from Chara-ani.com for quick reference of
 
 ##　原理
 
-キャラアニはイベントの日付と部数を「商品コード」（Bと8桁の数字）で管理されています。　すべての応募が同じ枚数で応募していたら、商品コードが当選メールでの出現回数を集計すると当選された部の合計がわかります。
+キャラアニはイベントの日付と部数を「商品コード」（Bと8桁の数字）で管理されています。　すべての応募が同じ枚数で応募していたら、商品コードが当選メールでの出現回数を集計することで当選された部の合計がわかります。
 
 リクエスト次第で異なる枚数で応募された場合の集計機能も検討していきます。
 
