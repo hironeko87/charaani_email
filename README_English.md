@@ -34,7 +34,7 @@ I will also consider putting in functions that recognizes different number of CD
 
 ## Troubleshooting
 
-Since my oshi's "Merchandise code" all starts with "B2360" so you might encounter the problem of script not returning anything. In that case, go to the file win3.py,
+Since my oshi's "Merchandise code" all starts with "B2360", you might encounter the problem of script not returning anything. In that case, go to the file win3.py,
 
 on the 26th line
 ```
