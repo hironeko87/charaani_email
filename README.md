@@ -18,7 +18,7 @@ A Python script to quickly parse &amp; decode e-mails sent from Chara-ani.com fo
 python win3.py [emlファイルのフォルダー/]　[csvファイルの出力先.csv]
 ```
 
-##　原理
+##  原理
 
 キャラアニはイベントの日付と部数を「商品コード」（Bと8桁の数字）で管理されています。　すべての応募が同じ枚数で応募していたら、商品コードが当選メールでの出現回数を集計することで当選された部の合計がわかります。
 
