@@ -1,5 +1,6 @@
 # charaani_email
 A Python script to quickly parse &amp; decode e-mails sent from Chara-ani.com for quick reference of total slots won for Not equal me offline &amp; online fan meets
+![イメージ](https://github.com/hironeko87/charaani_email/blob/main/SCR-20230712-r3-2.png)
 
 ## 使い方
 用意していただくもの
