@@ -26,8 +26,8 @@ python win3.py [folder that has all of the eml files/]　[path to csv file.csv]
 ## How it works
 Chara-ani chance manages talk events online or offline with "Merchandise code"(商品コード) that starts with "B" followed by 8 numbers. 
 
-If you applied for talk events with exact same number of CDs, this script counts how many apperances of "Merchandise code" there are in the given e-mails, then subtotals according to "Merchandise code".
-Therefore, multipling apperances of "Merchandise code" with number of CDs you put in, you can get a gist of how many CDs or slots of talk event you won before the payment is due. 
+If you applied for talk events with exact same number of CDs, this script counts how many appearances of "Merchandise code" there are in the given e-mails, then subtotals according to "Merchandise code".
+Therefore, multiplying appearances of "Merchandise code" with number of CDs you put in, you can get a gist of how many CDs or slots of talk event you won before the payment is due. 
 
 I will also consider putting in functions that recognizes different number of CDs per application. 
 
@@ -41,7 +41,7 @@ on the 26th line
     code = re.findall(r"B2360\d{4}", str(text))
 ```
 
-change "B2360" accordsing to your own application. "\d{4}" means that it will match exactly 4 digits.
+change "B2360" according to your own application. "\d{4}" means that it will match exactly 4 digits.
 
 If you have any questions, [@hironeko87](https://twitter.com/hironeko87)
 
