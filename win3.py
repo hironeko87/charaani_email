@@ -5,27 +5,33 @@ import re
 import pandas as pd
 emlpath = sys.argv[1]
 csvpath = sys.argv[2]
+searchmerchid = sys.argv[3]
 
-emailtext = []
-for root, dirs, files in os.walk(emlpath): #emlファイルが入ってるフォルダー
-     for file in files:
-         if not file.startswith("."):
-            with open(os.path.join(root, file), "r") as auto:
-                message_payload = auto.read()
-                try:
-                    email = parse_email(message_payload)
-                except ParseError as e:
-                    print("Failed to parse email: ", e)
-                    sys.exit(1)
-            print(email.text_plain)
-            emailtext.append(email.text_plain)
+regex = searchmerchid + "\d{4}"
 
+def read_email(path):
+    emailtext = []
+    for root, dirs, files in os.walk(path): #emlファイルが入ってるフォルダー
+        for file in files:
+            if not file.startswith("."):
+                with open(os.path.join(root, file), "r") as auto:
+                    message_payload = auto.read()
+                    try:
+                        email = parse_email(message_payload)
+                    except ParseError as e:
+                        print("Failed to parse email: ", e)
+                        sys.exit(1)
+                emailtext.append(email.text_plain)
+    return emailtext
 
-exp = []
-for text in emailtext:
-    code = re.findall(r"B2360\d{4}", str(text))
-    exp.append(code)
-flat = [x for row in exp for x in row]
-df = pd.DataFrame(flat)
-df.to_csv(csvpath) #csvファイルの出力先
-print(df.value_counts())
+def search(regexrule,outputpath):
+    exp = []
+    for text in read_email(emlpath):
+        code = re.findall(regexrule, str(text))
+        exp.append(code)
+    flat = [x for row in exp for x in row]
+    df = pd.DataFrame(flat)
+    df.to_csv(outputpath) #csvファイルの出力先
+    return df.value_counts()
+print(read_email(emlpath))
+print(search(regex, csvpath))
