@@ -22,7 +22,7 @@ A Python script to quickly parse &amp; decode e-mails sent from Chara-ani.com fo
      ```
 **入力するコマンド**
 ```
-python win3.py [emlファイルのフォルダー/]　[csvファイルの出力先.csv]
+python win3.py [emlファイルのフォルダー/]　[csvファイルの出力先.csv] [検索でマッチしたいBを含む商品コードの上5桁]
 ```
 
 ##  原理
@@ -32,20 +32,22 @@ python win3.py [emlファイルのフォルダー/]　[csvファイルの出力�
 
 リクエスト次第で異なる枚数で応募された場合の集計機能も検討しています。
 
-## Troubleshooting 
-推しメンの商品コードがB2360からはじまる任意の4桁のケースを想定して書いたので
+## ~~Troubleshooting~~ 
+~~推しメンの商品コードがB2360からはじまる任意の4桁のケースを想定して書いたので~~
 
 ```
 win3.py
 ```
-の
-26行目
+~~の~~
+~~26行目~~
 ```
     code = re.findall(r"B2360\d{4}", str(text))
 ```
-B2360のところ各自の用途に合わせて調整してください。
+~~B2360のところ各自の用途に合わせて調整してください。~~
+
+追加されたArgumentにより上5桁を指定できるようになりました。
 
 If you have any questions, [@hironeko87](https://twitter.com/hironeko87)
 
 
-2023-07-12 Ver0.1.1
+2023-07-20 Ver0.2
